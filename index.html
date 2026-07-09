@@ -1,66 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Random Activity</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>🎲 Random Activity</h1>
+    <button id="settings">
+        ⚙️ <span data-key="settings">Настройки</span>
+    </button>
+
+
+    <h1>
+        🎲 Random Activity
+    </h1>
+
 
     <div class="container">
 
-        <div id="activity">
+
+        <div id="activity" data-key="start">
             Нажми кнопку
         </div>
 
+
         <button id="generate">
-            🎲 Сгенерировать
+
+            🎲 <span data-key="generate">
+                Сгенерировать
+            </span>
+
         </button>
 
+
         <button id="copy">
-            📋 Скопировать
+
+            📋 <span data-key="copy">
+                Скопировать
+            </span>
+
         </button>
+
+
 
         <div class="categories">
 
-            <button class="category active" data-category="all">🌍 Все</button>
 
-            <button class="category" data-category="home">🏠 Дома</button>
+            <button class="category active" data-category="all">
+                🌍 <span data-key="all">Все</span>
+            </button>
 
-            <button class="category" data-category="alone">👤 Один</button>
 
-            <button class="category" data-category="friends">👥 С друзьями</button>
+            <button class="category" data-category="home">
+                🏠 <span data-key="home">Дома</span>
+            </button>
 
-            <button class="category" data-category="outside">🌳 На улице</button>
 
-            <button class="category" data-category="sport">💪 Спорт</button>
+            <button class="category" data-category="alone">
+                👤 <span data-key="alone">Один</span>
+            </button>
 
-            <button class="category" data-category="games">🎮 Игры</button>
 
-            <button class="category" data-category="movies">🎬 Фильмы</button>
+            <button class="category" data-category="friends">
+                👥 <span data-key="friends">С друзьями</span>
+            </button>
 
-            <button class="category" data-category="music">🎵 Музыка</button>
 
-            <button class="category" data-category="food">🍕 Еда</button>
+            <button class="category" data-category="outside">
+                🌳 <span data-key="outside">На улице</span>
+            </button>
 
-            <button class="category" data-category="study">📚 Учёба</button>
 
-            <button class="category" data-category="creative">🎨 Творчество</button>
+            <button class="category" data-category="sport">
+                💪 <span data-key="sport">Спорт</span>
+            </button>
 
-            <button class="category" data-category="travel">✈️ Путешествия</button>
 
-            <button class="category" data-category="relax">🛋 Отдых</button>
+            <button class="category" data-category="games">
+                🎮 <span data-key="games">Игры</span>
+            </button>
 
-            <button class="category" data-category="challenge">🔥 Челлендж</button>
+
+            <button class="category" data-category="movies">
+                🎬 <span data-key="movies">Фильмы</span>
+            </button>
+
+
+            <button class="category" data-category="music">
+                🎵 <span data-key="music">Музыка</span>
+            </button>
+
+
+            <button class="category" data-category="food">
+                🍕 <span data-key="food">Еда</span>
+            </button>
+
+
+            <button class="category" data-category="study">
+                📚 <span data-key="study">Учёба</span>
+            </button>
+
+
+            <button class="category" data-category="creative">
+                🎨 <span data-key="creative">Творчество</span>
+            </button>
+
+
+            <button class="category" data-category="travel">
+                ✈️ <span data-key="travel">Путешествия</span>
+            </button>
+
+
+            <button class="category" data-category="relax">
+                🛋 <span data-key="relax">Отдых</span>
+            </button>
+
+
+            <button class="category" data-category="challenge">
+                🔥 <span data-key="challenge">Челлендж</span>
+            </button>
+
 
         </div>
 
+
     </div>
+
+
+
+
+    <!-- Окно настроек -->
+
+    <div id="settingsPanel">
+
+
+        <div class="settingsBox">
+
+
+            <h2 data-key="language">
+                Язык
+            </h2>
+
+
+            <button id="russian">
+                🇷🇺 Русский
+            </button>
+
+
+            <button id="english">
+                🇬🇧 English
+            </button>
+
+
+            <button id="closeSettings">
+                ❌ <span data-key="close">
+                    Закрыть
+                </span>
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
 
     <script src="skript.js"></script>
 
 </body>
+
 </html>
