@@ -1,4 +1,3 @@
-JS
 const activities = {
 
     ru: {
