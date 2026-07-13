@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -24,11 +25,144 @@ body{
 
     padding:30px;
 
+    transition:0.3s;
+
 }
 
 
 
+
+
+/* СВЕТЛАЯ ТЕМА */
+
+
+body.light{
+
+    background:#f5f5f5;
+
+    color:#111;
+
+}
+
+
+
+body.light h1{
+
+    color:#111;
+
+}
+
+
+
+body.light #settings{
+
+    background:#e8e8e8;
+
+    color:#111;
+
+}
+
+
+
+body.light #settings:hover{
+
+    background:#d5d5d5;
+
+}
+
+
+
+
+
+body.light #activity{
+
+
+    background:white;
+
+
+    color:#111;
+
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+
+
+body.light #generate{
+
+    background:#111;
+
+    color:white;
+
+}
+
+
+
+
+body.light #copy{
+
+    background:#e5e5e5;
+
+    color:#111;
+
+}
+
+
+
+
+
+body.light .category{
+
+
+    background:#e5e5e5;
+
+
+    color:#111;
+
+
+}
+
+
+
+
+
+body.light .category:hover{
+
+
+    background:#d0d0d0;
+
+
+}
+
+
+
+
+
+body.light .category.active{
+
+
+    background:#111;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+
+
 /* настройки */
+
 
 #settings{
 
@@ -69,6 +203,8 @@ body{
 
 
 
+
+
 h1{
 
     font-size:45px;
@@ -83,6 +219,8 @@ h1{
 
 
 
+
+
 .container{
 
     width:90%;
@@ -92,6 +230,8 @@ h1{
     text-align:center;
 
 }
+
+
 
 
 
@@ -133,7 +273,11 @@ h1{
     animation:show 0.3s;
 
 
+    transition:0.3s;
+
+
 }
+
 
 
 
@@ -157,6 +301,8 @@ h1{
     }
 
 }
+
+
 
 
 
@@ -220,11 +366,6 @@ h1{
     transform:scale(1.06);
 
 }
-
-
-
-
-
 .categories{
 
 
@@ -244,6 +385,7 @@ h1{
 
 
 }
+
 
 
 
@@ -294,6 +436,7 @@ h1{
 
 
 
+
 .category.active{
 
 
@@ -310,7 +453,8 @@ h1{
 
 
 
-/* окно настроек */
+
+/* ОКНО НАСТРОЕК */
 
 
 #settingsPanel{
@@ -340,6 +484,8 @@ h1{
 
 
 
+
+
 .settingsBox{
 
 
@@ -361,7 +507,29 @@ h1{
     box-shadow:0 20px 50px black;
 
 
+    transition:0.3s;
+
+
 }
+
+
+
+
+
+body.light .settingsBox{
+
+
+    background:white;
+
+
+    color:#111;
+
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.25);
+
+
+}
+
 
 
 
@@ -373,6 +541,9 @@ h1{
 
 
 }
+
+
+
 
 
 
@@ -414,6 +585,22 @@ h1{
 
 
 
+
+body.light .settingsBox button{
+
+
+    background:#eeeeee;
+
+
+    color:#111;
+
+
+}
+
+
+
+
+
 .settingsBox button:hover{
 
 
@@ -424,6 +611,53 @@ h1{
 
 
 }
+
+
+
+
+
+body.light .settingsBox button:hover{
+
+
+    background:#dddddd;
+
+
+}
+
+
+
+
+
+
+
+/* ЭКРАНЫ НАСТРОЕК */
+
+
+#mainSettings,
+#languageSettings,
+#themeSettings{
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+
+#languageSettings,
+#themeSettings{
+
+
+    display:none;
+
+
+}
+
+
 
 
 
@@ -443,6 +677,64 @@ h1{
 
 
 
+
+/* кнопки выбора темы */
+
+
+#darkTheme{
+
+
+    background:#111;
+
+
+    color:white;
+
+
+}
+
+
+
+
+#lightTheme{
+
+
+    background:#eee;
+
+
+    color:#111;
+
+
+}
+
+
+
+
+
+body.light #darkTheme{
+
+
+    background:#111;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+body.light #lightTheme{
+
+
+    background:white;
+
+
+    color:#111;
+
+
+}
 @media(max-width:600px){
 
 
@@ -495,3 +787,135 @@ h1{
 
 
 }
+
+
+
+
+
+/* дополнительные плавные переходы */
+
+
+body,
+#activity,
+#settings,
+#generate,
+#copy,
+.category,
+.settingsBox,
+.settingsBox button{
+
+    transition:
+    background 0.3s,
+    color 0.3s,
+    transform 0.25s,
+    box-shadow 0.3s;
+
+}
+
+
+
+
+
+/* затемнение окна настроек для светлой темы */
+
+
+body.light #settingsPanel{
+
+    background:rgba(255,255,255,0.6);
+
+}
+
+
+
+
+
+/* улучшение кнопок в светлой теме */
+
+
+body.light #copy:hover{
+
+    background:#d5d5d5;
+
+}
+
+
+
+
+
+body.light #generate:hover{
+
+    background:#333;
+
+}
+
+
+
+
+
+/* сохранение визуального стиля карточек */
+
+
+body.light .container{
+
+    color:#111;
+
+}
+
+
+
+
+
+/* анимация открытия настроек */
+
+
+.settingsBox{
+
+    animation:settingsShow 0.25s ease;
+
+}
+
+
+
+@keyframes settingsShow{
+
+
+    from{
+
+        opacity:0;
+
+        transform:scale(0.9);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+
+}
+
+
+
+
+
+/* исправление цвета текста внутри настроек */
+
+
+body.light .settingsBox h2{
+
+    color:#111;
+
+}
+
+
+
+
+
+
+
+/* конец обновленного CSS */

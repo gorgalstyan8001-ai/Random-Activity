@@ -1,3 +1,4 @@
+JS
 const activities = {
 
     ru: {
@@ -200,215 +201,218 @@ const activities = {
         ]
 
     },
+en: {
 
+    all: [
+        "Watch a movie",
+        "Read a book",
+        "Listen to music",
+        "Do a workout",
+        "Go for a walk",
+        "Learn something new",
+        "Try a new recipe",
+        "Watch an interesting video",
+        "Call a friend",
+        "Clean something",
+        "Learn a new fact",
+        "Try a new skill"
+    ],
 
-    en: {
+    home: [
+        "Clean your room",
+        "Cook something",
+        "Watch a series",
+        "Rearrange your room",
+        "Try a new recipe",
+        "Read a book",
+        "Organize your things",
+        "Do a home workout",
+        "Play a board game",
+        "Listen to a podcast"
+    ],
 
-        all: [
-            "Watch a movie",
-            "Read a book",
-            "Listen to music",
-            "Do a workout",
-            "Go for a walk",
-            "Learn something new",
-            "Try a new recipe",
-            "Watch an interesting video",
-            "Call a friend",
-            "Clean something",
-            "Learn a new fact",
-            "Try a new skill"
-        ],
+    alone: [
+        "Read in silence",
+        "Meditate for 10 minutes",
+        "Write your goals",
+        "Learn a new topic",
+        "Watch a documentary",
+        "Practice a new skill",
+        "Make a weekly plan",
+        "Listen to music",
+        "Draw something",
+        "Think about new ideas"
+    ],
 
-        home: [
-            "Clean your room",
-            "Cook something",
-            "Watch a series",
-            "Rearrange your room",
-            "Try a new recipe",
-            "Read a book",
-            "Organize your things",
-            "Do a home workout",
-            "Play a board game",
-            "Listen to a podcast"
-        ],
+    friends: [
+        "Play football",
+        "Watch a movie together",
+        "Play games",
+        "Go for a walk",
+        "Go to a cafe",
+        "Talk about interesting topics",
+        "Take a photo together",
+        "Play board games",
+        "Have a mini competition",
+        "Visit a new place"
+    ],
 
-        alone: [
-            "Read in silence",
-            "Meditate for 10 minutes",
-            "Write your goals",
-            "Learn a new topic",
-            "Watch a documentary",
-            "Practice a new skill",
-            "Make a weekly plan",
-            "Listen to music",
-            "Draw something",
-            "Think about new ideas"
-        ],
+    outside: [
+        "Walk in the park",
+        "Ride a bike",
+        "Go to a new place",
+        "Watch the sunset",
+        "Play outside",
+        "Take photos",
+        "Take a short walk",
+        "Explore the neighborhood",
+        "Sit in fresh air",
+        "Go for coffee"
+    ],
 
-        friends: [
-            "Play football",
-            "Watch a movie together",
-            "Play games",
-            "Go for a walk",
-            "Go to a cafe",
-            "Talk about interesting topics",
-            "Take a photo together",
-            "Play board games",
-            "Have a mini competition",
-            "Visit a new place"
-        ],
+    sport: [
+        "Do a workout",
+        "Run for 20 minutes",
+        "Do stretching",
+        "Play football",
+        "Go swimming",
+        "Do abs exercises",
+        "Try a new sport",
+        "Have a challenge",
+        "Train your strength",
+        "Do push-ups"
+    ],
 
-        outside: [
-            "Walk in the park",
-            "Ride a bike",
-            "Go to a new place",
-            "Watch the sunset",
-            "Play outside",
-            "Take photos",
-            "Take a short walk",
-            "Explore the neighborhood",
-            "Sit in the fresh air",
-            "Go for coffee"
-        ],
+    games: [
+        "Play a new game",
+        "Complete a mission",
+        "Try a different genre",
+        "Play with friends",
+        "Have a gaming night",
+        "Learn new mechanics",
+        "Complete a hard level",
+        "Try a classic game",
+        "Create a new profile",
+        "Play for relaxation"
+    ],
 
-        sport: [
-            "Do a workout",
-            "Run for 20 minutes",
-            "Do stretching",
-            "Play football",
-            "Go swimming",
-            "Do abs exercises",
-            "Try a new sport",
-            "Have a challenge",
-            "Train your strength",
-            "Do push-ups"
-        ],
+    movies: [
+        "Watch a new movie",
+        "Rewatch your favorite film",
+        "Discover a new genre",
+        "Watch a thriller",
+        "Watch a comedy",
+        "Watch a drama",
+        "Watch a documentary",
+        "Watch an animated film",
+        "Watch a sci-fi movie",
+        "Have a movie marathon"
+    ],
 
-        games: [
-            "Play a new game",
-            "Complete a new mission",
-            "Try a different game genre",
-            "Play with friends",
-            "Have a gaming night",
-            "Learn new mechanics",
-            "Complete a difficult level",
-            "Try a classic game",
-            "Create a new profile",
-            "Play for relaxation"
-        ],
+    music: [
+        "Listen to a new album",
+        "Create a playlist",
+        "Discover a new artist",
+        "Listen to a podcast",
+        "Go to a concert",
+        "Learn music history",
+        "Listen to different genres",
+        "Make a cover",
+        "Listen to classical music",
+        "Have karaoke"
+    ],
 
-        movies: [
-            "Watch a new movie",
-            "Rewatch your favorite film",
-            "Discover a new genre",
-            "Watch a thriller",
-            "Watch a comedy",
-            "Watch a drama",
-            "Watch a documentary",
-            "Watch an animated film",
-            "Watch a sci-fi movie",
-            "Have a movie marathon"
-        ],
+    food: [
+        "Cook something new",
+        "Order food",
+        "Try a new restaurant",
+        "Make a dessert",
+        "Learn a recipe",
+        "Have a picnic",
+        "Try street food",
+        "Bake something",
+        "Make a smoothie",
+        "Try fusion cuisine"
+    ],
 
-        music: [
-            "Listen to a new album",
-            "Create a playlist",
-            "Discover a new artist",
-            "Listen to a podcast",
-            "Go to a concert",
-            "Learn about music history",
-            "Listen to different genres",
-            "Make a cover",
-            "Listen to classical music",
-            "Have a karaoke night"
-        ],
+    study: [
+        "Learn a new language",
+        "Read an article",
+        "Watch an educational video",
+        "Take an online course",
+        "Read a textbook",
+        "Make notes",
+        "Solve problems",
+        "Watch a TED talk",
+        "Learn a new skill",
+        "Read research papers"
+    ],
 
-        food: [
-            "Cook something new",
-            "Order takeout",
-            "Try a new restaurant",
-            "Make a dessert",
-            "Learn a new recipe",
-            "Have a picnic",
-            "Try street food",
-            "Bake something",
-            "Make a smoothie",
-            "Try fusion cuisine"
-        ],
+    creative: [
+        "Draw something",
+        "Write a story",
+        "Create music",
+        "Make a collage",
+        "Create digital art",
+        "Write poems",
+        "Design something",
+        "Make a craft",
+        "Try photography",
+        "Create something new"
+    ],
 
-        study: [
-            "Learn a new language",
-            "Read an article",
-            "Watch an educational video",
-            "Take an online course",
-            "Read a textbook",
-            "Make notes",
-            "Solve problems",
-            "Watch a TED talk",
-            "Study a new skill",
-            "Read research papers"
-        ],
+    travel: [
+        "Plan a trip",
+        "Research a destination",
+        "Look at travel photos",
+        "Read a travel blog",
+        "Learn about a new country",
+        "Watch travel videos",
+        "Make a bucket list",
+        "Book accommodation",
+        "Learn local phrases",
+        "Explore maps"
+    ],
 
-        creative: [
-            "Draw something",
-            "Write a story",
-            "Make music",
-            "Create a collage",
-            "Knit or sew",
-            "Make pottery",
-            "Create digital art",
-            "Write poetry",
-            "Design something",
-            "Make a craft project"
-        ],
+    relax: [
+        "Take a nap",
+        "Take a bath",
+        "Get a massage",
+        "Listen to relaxing music",
+        "Do yoga",
+        "Meditate",
+        "Read a book",
+        "Sit and breathe",
+        "Write a journal",
+        "Watch the clouds"
+    ],
 
-        travel: [
-            "Plan a trip",
-            "Research a destination",
-            "Look at travel photos",
-            "Read a travel blog",
-            "Learn about a new country",
-            "Watch travel videos",
-            "Make a bucket list",
-            "Book accommodation",
-            "Learn local phrases",
-            "Explore maps"
-        ],
+    challenge: [
+        "Do 100 push-ups",
+        "Read 50 pages",
+        "No phone day",
+        "Learn something in 1 hour",
+        "Exercise for 1 hour",
+        "30 day challenge",
+        "Write 1000 words",
+        "Talk to a stranger",
+        "Try something new",
+        "Finish a hard task"
+    ]
 
-        relax: [
-            "Take a nap",
-            "Take a bath",
-            "Get a massage",
-            "Listen to ambient music",
-            "Do yoga",
-            "Meditate",
-            "Read a book",
-            "Sit and breathe",
-            "Journal",
-            "Watch the clouds"
-        ],
+}
 
-        challenge: [
-            "Do 100 push-ups",
-            "Read 50 pages",
-            "No phone day",
-            "Learn something in 1 hour",
-            "Exercise for 1 hour",
-            "Do 30 day challenge",
-            "Write 1000 words",
-            "Talk to a stranger",
-            "Try something new",
-            "Complete a hard task"
-        ]
-
-    }
 
 };
 
 
+
 let language = localStorage.getItem("language") || "ru";
 
+let theme = localStorage.getItem("theme") || "dark";
+
 let currentCategory = "all";
+
 
 
 const activity = document.getElementById("activity");
@@ -418,14 +422,29 @@ const copyButton = document.getElementById("copy");
 const settingsButton = document.getElementById("settings");
 const settingsPanel = document.getElementById("settingsPanel");
 
+
+const mainSettings = document.getElementById("mainSettings");
+const languageSettings = document.getElementById("languageSettings");
+const themeSettings = document.getElementById("themeSettings");
+
+
+const openLanguage = document.getElementById("openLanguage");
+const openTheme = document.getElementById("openTheme");
+
+
 const russianButton = document.getElementById("russian");
 const englishButton = document.getElementById("english");
+
+
+const darkTheme = document.getElementById("darkTheme");
+const lightTheme = document.getElementById("lightTheme");
+
+
+const backLanguage = document.getElementById("backLanguage");
+const backTheme = document.getElementById("backTheme");
+
+
 const closeSettings = document.getElementById("closeSettings");
-
-
-
-// Тексты интерфейса
-
 const translations = {
 
     ru: {
@@ -452,7 +471,11 @@ const translations = {
         challenge: "Челлендж",
 
         language: "Язык",
+        theme: "Фон",
         close: "Закрыть",
+        back: "Назад",
+        dark: "Тёмный",
+        light: "Светлый",
         copied: "✅ Скопировано!"
 
     },
@@ -482,12 +505,17 @@ const translations = {
         challenge: "Challenge",
 
         language: "Language",
+        theme: "Background",
         close: "Close",
+        back: "Back",
+        dark: "Dark",
+        light: "Light",
         copied: "✅ Copied!"
 
     }
 
 };
+
 
 
 
@@ -505,6 +533,7 @@ function changeLanguage(lang){
 
         const key = element.dataset.key;
 
+
         if(translations[lang][key]){
 
             element.textContent = translations[lang][key];
@@ -520,9 +549,43 @@ function changeLanguage(lang){
 
 
 
-// загрузка языка при открытии сайта
+
+
+// смена темы
+
+function changeTheme(mode){
+
+    theme = mode;
+
+    localStorage.setItem("theme", mode);
+
+
+    if(mode === "light"){
+
+        document.body.classList.add("light");
+
+    }
+
+    else{
+
+        document.body.classList.remove("light");
+
+    }
+
+}
+
+
+
+
+
+
+// загрузка сохранений
 
 changeLanguage(language);
+
+changeTheme(theme);
+
+
 
 
 
@@ -546,7 +609,11 @@ generateButton.onclick = () => {
 
 
 
+
+
+
 // категории
+
 
 document.querySelectorAll(".category").forEach(button => {
 
@@ -572,7 +639,10 @@ document.querySelectorAll(".category").forEach(button => {
 
 
 
+
+
 // копирование
+
 
 copyButton.onclick = () => {
 
@@ -583,11 +653,14 @@ copyButton.onclick = () => {
     const oldText = copyButton.querySelector("span");
 
 
+
     if(oldText){
 
         oldText.textContent = translations[language].copied;
 
     }
+
+
 
 
     setTimeout(()=>{
@@ -603,22 +676,104 @@ copyButton.onclick = () => {
     },1500);
 
 
+
 };
+
+
+
 
 
 
 
 // открыть настройки
 
+
 settingsButton.onclick = () => {
 
+
     settingsPanel.style.display = "flex";
+
+
+    mainSettings.style.display = "block";
+
+    languageSettings.style.display = "none";
+
+    themeSettings.style.display = "none";
+
 
 };
 
 
 
 
+
+
+// открыть язык
+
+
+openLanguage.onclick = () => {
+
+
+    mainSettings.style.display = "none";
+
+    languageSettings.style.display = "block";
+
+
+};
+
+
+
+
+
+
+// открыть фон
+
+
+openTheme.onclick = () => {
+
+
+    mainSettings.style.display = "none";
+
+    themeSettings.style.display = "block";
+
+
+};
+
+
+
+
+
+
+// назад из языка
+
+
+backLanguage.onclick = () => {
+
+
+    languageSettings.style.display = "none";
+
+    mainSettings.style.display = "block";
+
+
+};
+
+
+
+
+
+
+// назад из фона
+
+
+backTheme.onclick = () => {
+
+
+    themeSettings.style.display = "none";
+
+    mainSettings.style.display = "block";
+
+
+};
 // закрыть настройки
 
 closeSettings.onclick = () => {
@@ -630,7 +785,9 @@ closeSettings.onclick = () => {
 
 
 
-// русский
+
+
+// русский язык
 
 russianButton.onclick = () => {
 
@@ -641,10 +798,38 @@ russianButton.onclick = () => {
 
 
 
-// английский
+
+
+// английский язык
 
 englishButton.onclick = () => {
 
     changeLanguage("en");
+
+};
+
+
+
+
+
+
+// тёмная тема
+
+darkTheme.onclick = () => {
+
+    changeTheme("dark");
+
+};
+
+
+
+
+
+
+// светлая тема
+
+lightTheme.onclick = () => {
+
+    changeTheme("light");
 
 };

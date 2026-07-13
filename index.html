@@ -10,124 +10,178 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <button id="settings">
-        ⚙️ <span data-key="settings">Настройки</span>
+
+<button id="settings">
+    ⚙️ <span data-key="settings">Настройки</span>
+</button>
+
+
+
+<h1>
+    🎲 Random Activity
+</h1>
+
+
+
+
+<div class="container">
+
+
+
+    <div id="activity" data-key="start">
+        Нажми кнопку
+    </div>
+
+
+
+
+    <button id="generate">
+
+        🎲 <span data-key="generate">
+            Сгенерировать
+        </span>
+
     </button>
 
 
-    <h1>
-        🎲 Random Activity
-    </h1>
 
 
-    <div class="container">
+    <button id="copy">
+
+        📋 <span data-key="copy">
+            Скопировать
+        </span>
+
+    </button>
 
 
-        <div id="activity" data-key="start">
-            Нажми кнопку
-        </div>
 
 
-        <button id="generate">
 
-            🎲 <span data-key="generate">
-                Сгенерировать
-            </span>
 
+    <div class="categories">
+
+
+
+        <button class="category active" data-category="all">
+            🌍 <span data-key="all">Все</span>
         </button>
 
 
-        <button id="copy">
+        <button class="category" data-category="home">
+            🏠 <span data-key="home">Дома</span>
+        </button>
 
-            📋 <span data-key="copy">
-                Скопировать
-            </span>
 
+        <button class="category" data-category="alone">
+            👤 <span data-key="alone">Один</span>
+        </button>
+
+
+        <button class="category" data-category="friends">
+            👥 <span data-key="friends">С друзьями</span>
+        </button>
+
+
+        <button class="category" data-category="outside">
+            🌳 <span data-key="outside">На улице</span>
+        </button>
+
+
+        <button class="category" data-category="sport">
+            💪 <span data-key="sport">Спорт</span>
+        </button>
+
+
+        <button class="category" data-category="games">
+            🎮 <span data-key="games">Игры</span>
+        </button>
+
+
+        <button class="category" data-category="movies">
+            🎬 <span data-key="movies">Фильмы</span>
+        </button>
+
+
+        <button class="category" data-category="music">
+            🎵 <span data-key="music">Музыка</span>
+        </button>
+
+
+        <button class="category" data-category="food">
+            🍕 <span data-key="food">Еда</span>
+        </button>
+
+
+        <button class="category" data-category="study">
+            📚 <span data-key="study">Учёба</span>
+        </button>
+
+
+        <button class="category" data-category="creative">
+            🎨 <span data-key="creative">Творчество</span>
+        </button>
+
+
+        <button class="category" data-category="travel">
+            ✈️ <span data-key="travel">Путешествия</span>
+        </button>
+
+
+        <button class="category" data-category="relax">
+            🛋 <span data-key="relax">Отдых</span>
+        </button>
+
+
+        <button class="category" data-category="challenge">
+            🔥 <span data-key="challenge">Челлендж</span>
         </button>
 
 
 
-        <div class="categories">
+    </div>
 
 
-            <button class="category active" data-category="all">
-                🌍 <span data-key="all">Все</span>
-            </button>
+</div>
 
 
-            <button class="category" data-category="home">
-                🏠 <span data-key="home">Дома</span>
-            </button>
 
 
-            <button class="category" data-category="alone">
-                👤 <span data-key="alone">Один</span>
-            </button>
 
 
-            <button class="category" data-category="friends">
-                👥 <span data-key="friends">С друзьями</span>
-            </button>
+
+<!-- Настройки -->
 
 
-            <button class="category" data-category="outside">
-                🌳 <span data-key="outside">На улице</span>
-            </button>
+<div id="settingsPanel">
 
 
-            <button class="category" data-category="sport">
-                💪 <span data-key="sport">Спорт</span>
-            </button>
+    <div class="settingsBox" id="mainSettings">
 
 
-            <button class="category" data-category="games">
-                🎮 <span data-key="games">Игры</span>
-            </button>
+        <h2 data-key="settings">
+            Настройки
+        </h2>
 
 
-            <button class="category" data-category="movies">
-                🎬 <span data-key="movies">Фильмы</span>
-            </button>
+        <button id="openLanguage">
+            🌐 <span data-key="language">Язык</span>
+        </button>
 
 
-            <button class="category" data-category="music">
-                🎵 <span data-key="music">Музыка</span>
-            </button>
+        <button id="openTheme">
+            🎨 <span data-key="theme">Фон</span>
+        </button>
 
 
-            <button class="category" data-category="food">
-                🍕 <span data-key="food">Еда</span>
-            </button>
-
-
-            <button class="category" data-category="study">
-                📚 <span data-key="study">Учёба</span>
-            </button>
-
-
-            <button class="category" data-category="creative">
-                🎨 <span data-key="creative">Творчество</span>
-            </button>
-
-
-            <button class="category" data-category="travel">
-                ✈️ <span data-key="travel">Путешествия</span>
-            </button>
-
-
-            <button class="category" data-category="relax">
-                🛋 <span data-key="relax">Отдых</span>
-            </button>
-
-
-            <button class="category" data-category="challenge">
-                🔥 <span data-key="challenge">Челлендж</span>
-            </button>
-
-
-        </div>
+        <button id="closeSettings">
+            ❌ <span data-key="close">
+                Закрыть
+            </span>
+        </button>
 
 
     </div>
@@ -135,44 +189,83 @@
 
 
 
-    <!-- Окно настроек -->
 
-    <div id="settingsPanel">
-
-
-        <div class="settingsBox">
+    <!-- Язык -->
 
 
-            <h2 data-key="language">
-                Язык
-            </h2>
+    <div class="settingsBox" id="languageSettings">
 
 
-            <button id="russian">
-                🇷🇺 Русский
-            </button>
+        <h2 data-key="language">
+            Язык
+        </h2>
 
 
-            <button id="english">
-                🇬🇧 English
-            </button>
+        <button id="russian">
+            🇷🇺 Русский
+        </button>
 
 
-            <button id="closeSettings">
-                ❌ <span data-key="close">
-                    Закрыть
-                </span>
-            </button>
+        <button id="english">
+            🇬🇧 English
+        </button>
 
 
-        </div>
+        <button id="backLanguage">
+            ⬅️ <span data-key="back">Назад</span>
+        </button>
 
 
     </div>
 
 
 
-    <script src="skript.js"></script>
+
+
+
+    <!-- Фон -->
+
+
+    <div class="settingsBox" id="themeSettings">
+
+
+        <h2 data-key="theme">
+            Фон
+        </h2>
+
+
+
+        <button id="darkTheme">
+            ⚫ Тёмный
+        </button>
+
+
+
+        <button id="lightTheme">
+            ⚪ Светлый
+        </button>
+
+
+
+        <button id="backTheme">
+            ⬅️ <span data-key="back">Назад</span>
+        </button>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<script src="skript.js"></script>
+
 
 </body>
 
