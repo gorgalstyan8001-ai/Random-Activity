@@ -373,6 +373,9 @@ let theme=localStorage.getItem("theme")||"dark";
 let currentCategory="all";
 let favorites=JSON.parse(localStorage.getItem("favorites"))||[];
 
+let streak=parseInt(localStorage.getItem("streak"))||0;
+let lastGenerateDate=localStorage.getItem("lastGenerateDate")||null;
+
 const activity=document.getElementById("activity");
 const generateButton=document.getElementById("generate");
 const copyButton=document.getElementById("copy");
@@ -380,6 +383,9 @@ const favoriteButton=document.getElementById("favorite");
 
 const settingsButton=document.getElementById("settings");
 const settingsPanel=document.getElementById("settingsPanel");
+
+const streakBox=document.getElementById("streak");
+const streakCount=document.getElementById("streakCount");
 
 const mainSettings=document.getElementById("mainSettings");
 const languageSettings=document.getElementById("languageSettings");
@@ -531,8 +537,48 @@ favoritesList.appendChild(card);
 
 }
 
+function getTodayString(){
+return new Date().toDateString();
+}
+
+function getYesterdayString(){
+const yesterday=new Date();
+yesterday.setDate(yesterday.getDate()-1);
+return yesterday.toDateString();
+}
+
+function updateStreakDisplay(){
+streakCount.textContent=streak;
+}
+
+function checkStreak(){
+
+const today=getTodayString();
+
+if(lastGenerateDate===today){
+return false;
+}
+
+if(lastGenerateDate===getYesterdayString()){
+streak+=1;
+}else{
+streak=1;
+}
+
+lastGenerateDate=today;
+localStorage.setItem("streak",streak);
+localStorage.setItem("lastGenerateDate",lastGenerateDate);
+
+updateStreakDisplay();
+
+return true;
+
+}
+
 changeLanguage(language);
 changeTheme(theme);
+updateStreakDisplay();
+
 generateButton.onclick=()=>{
 
 const list=activities[language][currentCategory];
@@ -542,6 +588,15 @@ const random=Math.floor(Math.random()*list.length);
 activity.textContent=list[random];
 
 updateFavoriteButton();
+
+const streakIncreased=checkStreak();
+
+if(streakIncreased){
+streakBox.classList.add("pulse");
+setTimeout(()=>{
+streakBox.classList.remove("pulse");
+},500);
+}
 
 };
 

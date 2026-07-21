@@ -90,6 +90,33 @@ transform:scale(1.08);
 background:#333;
 }
 
+#streak{
+position:absolute;
+top:clamp(15px,3vw,25px);
+left:clamp(15px,3vw,25px);
+background:#1f1f1f;
+color:white;
+padding:clamp(8px,2vw,12px) clamp(14px,3vw,20px);
+border-radius:25px;
+font-size:clamp(14px,2vw,18px);
+transition:0.3s;
+}
+
+body.light #streak{
+background:#e8e8e8;
+color:#111;
+}
+
+#streak.pulse{
+animation:streakPulse 0.5s ease;
+}
+
+@keyframes streakPulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.25);}
+100%{transform:scale(1);}
+}
+
 h1{
 font-size:clamp(28px,5vw,45px);
 margin-bottom:clamp(25px,5vw,45px);
@@ -447,6 +474,10 @@ padding:10px 12px;
 }
 
 #settings{
+font-size:14px;
+}
+
+#streak{
 font-size:14px;
 }
 
