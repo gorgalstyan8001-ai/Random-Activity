@@ -378,7 +378,6 @@ let lastGenerateDate=localStorage.getItem("lastGenerateDate")||null;
 
 const activity=document.getElementById("activity");
 const generateButton=document.getElementById("generate");
-const copyButton=document.getElementById("copy");
 const favoriteButton=document.getElementById("favorite");
 
 const settingsButton=document.getElementById("settings");
@@ -414,7 +413,6 @@ ru:{
 settings:"Настройки",
 start:"Нажми кнопку",
 generate:"Сгенерировать",
-copy:"Скопировать",
 favorite:"Нравится",
 favorites:"Понравившиеся",
 all:"Все",
@@ -435,14 +433,12 @@ challenge:"Челлендж",
 language:"Язык",
 theme:"Фон",
 close:"Закрыть",
-back:"Назад",
-copied:"✅ Скопировано!"
+back:"Назад"
 },
 en:{
 settings:"Settings",
 start:"Press the button",
 generate:"Generate",
-copy:"Copy",
 favorite:"Like",
 favorites:"Favorites",
 all:"All",
@@ -463,8 +459,7 @@ challenge:"Challenge",
 language:"Language",
 theme:"Background",
 close:"Close",
-back:"Back",
-copied:"✅ Copied!"
+back:"Back"
 }
 };
 
@@ -638,30 +633,6 @@ button.classList.add("active");
 };
 
 });
-
-copyButton.onclick=()=>{
-
-navigator.clipboard.writeText(activity.textContent);
-
-let oldText=copyButton.querySelector("span");
-
-if(oldText){
-
-oldText.textContent=translations[language].copied;
-
-}
-
-setTimeout(()=>{
-
-if(oldText){
-
-oldText.textContent=translations[language].copy;
-
-}
-
-},1500);
-
-};
 
 settingsButton.onclick=()=>{
 
