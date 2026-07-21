@@ -570,9 +570,43 @@ return true;
 
 }
 
+function requestNotificationPermission(){
+if("Notification" in window && Notification.permission==="default"){
+Notification.requestPermission();
+}
+}
+
+function showReminderIfNeeded(){
+
+if(!("Notification" in window)){
+return;
+}
+
+if(Notification.permission!=="granted"){
+return;
+}
+
+const today=getTodayString();
+
+if(lastGenerateDate===today){
+return;
+}
+
+const title=language==="ru" ? "🎲 Random Activity" : "🎲 Random Activity";
+const body=language==="ru"
+? "Ты ещё не выбрал активность сегодня! Не теряй стрик 🔥"
+: "You haven't picked an activity today! Don't lose your streak 🔥";
+
+new Notification(title,{body:body});
+
+}
+
 changeLanguage(language);
 changeTheme(theme);
 updateStreakDisplay();
+requestNotificationPermission();
+
+setTimeout(showReminderIfNeeded,3000);
 
 generateButton.onclick=()=>{
 
