@@ -52,6 +52,11 @@ background:#e5e5e5;
 color:#111;
 }
 
+body.light #share{
+background:#e5e5e5;
+color:#111;
+}
+
 body.light .category{
 background:#e5e5e5;
 color:#111;
@@ -159,7 +164,8 @@ gap:15px;
 }
 
 #generate,
-#favorite{
+#favorite,
+#share{
 width:clamp(150px,30vw,240px);
 height:clamp(50px,8vw,65px);
 border:none;
@@ -179,8 +185,14 @@ background:#242424;
 color:white;
 }
 
+#share{
+background:#242424;
+color:white;
+}
+
 #generate:hover,
-#favorite:hover{
+#favorite:hover,
+#share:hover{
 transform:scale(1.06);
 }
 .categories{
@@ -316,6 +328,10 @@ body.light #favorite:hover{
 background:#d5d5d5;
 }
 
+body.light #share:hover{
+background:#d5d5d5;
+}
+
 body.light #generate:hover{
 background:#333;
 }
@@ -438,7 +454,8 @@ gap:10px;
 }
 
 #generate,
-#favorite{
+#favorite,
+#share{
 width:90%;
 max-width:300px;
 height:55px;
@@ -496,7 +513,8 @@ padding:15px;
 }
 
 #generate,
-#favorite{
+#favorite,
+#share{
 width:100%;
 height:50px;
 font-size:16px;

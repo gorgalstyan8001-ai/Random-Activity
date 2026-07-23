@@ -379,6 +379,7 @@ let lastGenerateDate=localStorage.getItem("lastGenerateDate")||null;
 const activity=document.getElementById("activity");
 const generateButton=document.getElementById("generate");
 const favoriteButton=document.getElementById("favorite");
+const shareButton=document.getElementById("share");
 
 const settingsButton=document.getElementById("settings");
 const settingsPanel=document.getElementById("settingsPanel");
@@ -415,6 +416,10 @@ start:"Нажми кнопку",
 generate:"Сгенерировать",
 favorite:"Нравится",
 favorites:"Понравившиеся",
+share:"Поделиться",
+shareText:"Моя активность дня",
+shareStreak:"Мой стрик",
+shareCopied:"✅ Ссылка скопирована!",
 all:"Все",
 home:"Дома",
 alone:"Один",
@@ -441,6 +446,10 @@ start:"Press the button",
 generate:"Generate",
 favorite:"Like",
 favorites:"Favorites",
+share:"Share",
+shareText:"My activity of the day",
+shareStreak:"My streak",
+shareCopied:"✅ Link copied!",
 all:"All",
 home:"Home",
 alone:"Alone",
@@ -650,6 +659,45 @@ favorites.push(current);
 saveFavorites();
 
 updateFavoriteButton();
+
+};
+
+shareButton.onclick=()=>{
+
+let current=activity.textContent;
+
+if(!current||current===translations[language].start){
+return;
+}
+
+const shareText=`🎲 ${translations[language].shareText}: ${current}\n🔥 ${translations[language].shareStreak}: ${streak}`;
+
+if(navigator.share){
+
+navigator.share({
+title:"Random Activity",
+text:shareText,
+url:window.location.href
+}).catch(()=>{});
+
+}else{
+
+navigator.clipboard.writeText(shareText+"\n"+window.location.href);
+
+let oldText=shareButton.querySelector("span");
+
+if(oldText){
+
+let original=oldText.textContent;
+oldText.textContent=translations[language].shareCopied;
+
+setTimeout(()=>{
+oldText.textContent=original;
+},1500);
+
+}
+
+}
 
 };
 
